@@ -1,0 +1,169 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Rataiada Hub</title>
+
+<style>
+
+*{
+margin:0;
+padding:0;
+box-sizing:border-box;
+}
+
+body{
+font-family: Arial, sans-serif;
+color:white;
+display:flex;
+justify-content:center;
+align-items:center;
+min-height:100vh;
+
+/* FUNDO ANIMADO */
+background: linear-gradient(-45deg,#000,#111,#1a1a1a,#0f0f0f);
+background-size:400% 400%;
+animation:gradientBG 12s ease infinite;
+}
+
+@keyframes gradientBG{
+0%{background-position:0% 50%;}
+50%{background-position:100% 50%;}
+100%{background-position:0% 50%;}
+}
+
+.container{
+width:90%;
+max-width:500px;
+text-align:center;
+padding:20px;
+}
+
+/* TITULO */
+h1{
+margin-bottom:5px;
+font-size:28px;
+letter-spacing:1px;
+}
+
+p{
+opacity:0.7;
+margin-bottom:20px;
+}
+
+/* BOTÕES */
+.links a{
+display:block;
+background:#111;
+padding:18px;
+margin:15px 0;
+border-radius:14px;
+text-decoration:none;
+color:white;
+font-size:18px;
+font-weight:bold;
+transition:0.35s;
+border:1px solid #333;
+position:relative;
+overflow:hidden;
+}
+
+/* EFEITO NEON */
+.links a:hover{
+background:#ff0000;
+transform:scale(1.05);
+box-shadow:
+0 0 10px #ff0000,
+0 0 20px #ff0000,
+0 0 40px #ff0000;
+}
+
+/* BRILHO PASSANDO */
+.links a::before{
+content:"";
+position:absolute;
+top:0;
+left:-100%;
+width:100%;
+height:100%;
+background:linear-gradient(
+120deg,
+transparent,
+rgba(255,255,255,0.3),
+transparent
+);
+transition:0.5s;
+}
+
+.links a:hover::before{
+left:100%;
+}
+
+/* RODAPÉ */
+footer{
+margin-top:25px;
+opacity:0.5;
+font-size:14px;
+}
+
+/* MOBILE */
+@media(max-width:600px){
+
+h1{
+font-size:24px;
+}
+
+.links a{
+font-size:16px;
+padding:16px;
+}
+
+}
+
+</style>
+</head>
+
+<body>
+
+<div class="container">
+
+<h1>🔥 Rataiada Scripts</h1>
+<p>Central de Links da Rataiada</p>
+
+<div class="links">
+
+<a href="https://saladofuturo.educacao.sp.gov.br/escolha-de-perfil" target="_blank">
+🏫 Sala do Futuro
+</a>
+
+<a href="https://apostilas.cupiditys.lol/" target="_blank">
+📚 Apostilas
+</a>
+
+<a href="https://taskitos.cupiditys.lol/" target="_blank">
+📝 Tarefas / Taskitos
+</a>
+
+<a href="https://kazereda.nejizzuki.xyz/" target="_blank">
+✍️ Redação
+</a>
+
+<a href="https://khan.cupiditys.lol/pt-br/" target="_blank">
+🎓 Khan Academy
+</a>
+
+<a href="https://leiasp.cupiditys.lol/" target="_blank">
+📖 Leia SP
+</a>
+
+</div>
+
+<footer>
+© 2026 Rataiada
+</footer>
+
+</div>
+
+</body>
+</html>
